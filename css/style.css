@@ -469,13 +469,13 @@ section h3 {
   text-align: center;
 }
 
-/* TECHNOLOGIESZ SECTION */
+/* SKILLS SECTION */
 
-#technologies {
+#skills {
   padding: 50px;
 }
 
-#technologies ul {
+#skills ul {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
@@ -483,7 +483,7 @@ section h3 {
   padding: 0;
 }
 
-#technologies li {
+#skills li {
   position: relative;
   color: var(--gray);
   list-style: none;
@@ -492,7 +492,7 @@ section h3 {
   padding: 5px;
 }
 
-#technologies li span {
+#skills li span {
   position: absolute;
   padding: 5px 0;
   width: 100px;
@@ -509,7 +509,7 @@ section h3 {
   transition: opacity .2s ease-in-out;
 }
 
-#technologies li span::before {
+#skills li span::before {
   content: "";
   position: absolute;
   top: -10px;
@@ -523,7 +523,7 @@ section h3 {
   border-bottom: 10px solid var(--gray);
 }
 
-#technologies li:hover span {
+#skills li:hover span {
   opacity: 1;
 }
 
@@ -846,9 +846,9 @@ footer .social-media {
   }
   
   
-  /* TECHNOLOGIES */
+  /* skills */
   
-  #technologies ul {
+  #skills ul {
     flex-wrap: wrap;
   }
   
@@ -1091,14 +1091,14 @@ footer .social-media {
   
   
   
-  /* TECHNOLOGIES */
+  /* skills */
   
-  #technologies ul {
+  #skills ul {
     padding: 0;
     font-size: 20px;
   }
   
-  #technologies li {
+  #skills li {
     padding: 5px;
   }
   
