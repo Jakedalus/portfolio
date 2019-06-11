@@ -45,6 +45,7 @@ header .container {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  animation: .8s ease-in-out fadeIn;
 }
 
 
@@ -75,6 +76,11 @@ a {
 
 #intro h2, h3, h5, p {
   font-family: 'Merriweather', serif;
+  
+}
+
+#intro * {
+  animation: .8s ease-in-out .4s fadeInMoveUp backwards;
 }
 
 #intro h2 {
@@ -87,6 +93,7 @@ h4 {
 
 nav {
   padding-top: 5px;
+  
 }
 
 nav a {
@@ -114,6 +121,28 @@ nav li:hover {
 #hamburger {
   display: none;
   cursor: pointer;
+}
+
+@keyframes fadeInMoveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
 }
 
 main {
