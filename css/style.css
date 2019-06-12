@@ -223,7 +223,7 @@ section h3 {
   background: darkorange;
 }
 
-/* SERVICES SECTIONS*/
+/* ABOUT SECTIONS*/
 
 .service {
   width: 325px;
@@ -237,6 +237,31 @@ section h3 {
   width: 120px;
   padding: 25px 0;
   border-radius: 100%;
+}
+
+#about-subsection {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+
+}
+
+.about-subsection__paragraphs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 600px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+#avatar {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 8px solid var(--gray);
+  object-fit: cover;
+  object-position: 80% 50%;
 }
 
 /* PORTFOLIO SECTION */
