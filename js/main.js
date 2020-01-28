@@ -1,8 +1,8 @@
 const introSection = document.querySelector('#intro');
-const servicesSection = document.querySelector('#services');
-const portfolioSection = document.querySelector('#portfolio');
+//const servicesSection = document.querySelector('#services');
+const portfolioSection = document.querySelector('#projects');
 const aboutSection = document.querySelector('#about');
-const teamSection = document.querySelector('#team');
+//const teamSection = document.querySelector('#team');
 const contactSection = document.querySelector('#contact');
 
 const header = document.querySelector('header');
@@ -10,10 +10,10 @@ const hamburger = document.querySelector('#hamburger');
 const innerNav = document.querySelector('#inner-nav');
 const home = document.querySelector('#home-page');
 const headerContainer = document.querySelector('header .container');
-const servicesNav = document.querySelector('a[href="#services"]');
-const portfolioNav = document.querySelector('a[href="#portfolio"]');
+//const servicesNav = document.querySelector('a[href="#services"]');
+const portfolioNav = document.querySelector('a[href="#projects"]');
 const aboutNav = document.querySelector('a[href="#about"]');
-const teamNav = document.querySelector('a[href="#team"]');
+//const teamNav = document.querySelector('a[href="#team"]');
 const contactNav = document.querySelector('a[href="#contact"]');
 
 
@@ -73,8 +73,6 @@ year.textContent = new Date().getFullYear();
 
 
 // Scroll behavior
-
-
 window.addEventListener('scroll', () => {
 //  console.log("window.innerHeight:", window.innerHeight);
 //  console.log("shrink navbar:", introSection.getBoundingClientRect().bottom - window.innerHeight <= 0);
@@ -94,11 +92,11 @@ window.addEventListener('scroll', () => {
   }
   
   //Highlight the navbar links when section is in view
-  if (servicesSection.getBoundingClientRect().top <= 10 && servicesSection.getBoundingClientRect().bottom >= 10) {
-    servicesNav.style.color = 'orange';
-  } else {
-    servicesNav.style.color = 'white';
-  }
+//  if (servicesSection.getBoundingClientRect().top <= 10 && servicesSection.getBoundingClientRect().bottom >= 10) {
+//    servicesNav.style.color = 'orange';
+//  } else {
+//    servicesNav.style.color = 'white';
+//  }
   
   if (portfolioSection.getBoundingClientRect().top <= 10 && portfolioSection.getBoundingClientRect().bottom >= 10) {
     portfolioNav.style.color = 'orange';
@@ -112,11 +110,11 @@ window.addEventListener('scroll', () => {
     aboutNav.style.color = 'white';
   }
   
-  if (teamSection.getBoundingClientRect().top <= 10 && teamSection.getBoundingClientRect().bottom >= -100) {
-    teamNav.style.color = 'orange';
-  } else {
-    teamNav.style.color = 'white';
-  }
+//  if (teamSection.getBoundingClientRect().top <= 10 && teamSection.getBoundingClientRect().bottom >= -100) {
+//    teamNav.style.color = 'orange';
+//  } else {
+//    teamNav.style.color = 'white';
+//  }
   
   if (contactSection.getBoundingClientRect().top <= 100) {
     contactNav.style.color = 'orange';

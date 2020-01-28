@@ -255,6 +255,43 @@ section h3 {
   line-height: 1.6;
 }
 
+#skills {
+	
+}
+
+#skills ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+/*  width: 550px;*/
+  margin: 0 auto;
+}
+
+#skills li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  flex-basis: 30px;
+	margin-bottom: 2px;
+}
+
+#skills span {
+/*  background: lightgreen;*/
+/*  width: 100px;*/
+	text-align: right;
+  height: 20px;
+  padding: 0 5px;
+}
+
+#skills progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 400px;  
+}
+
+
 #avatar {
   width: 350px;
   height: 350px;
@@ -493,42 +530,6 @@ section h3 {
   color: var(--gray);
   text-align: center;
 }
-
-/* SKILLS SECTION */
-
-
-#skills ul {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  width: 550px;
-  margin: 0 auto;
-}
-
-#skills li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  flex-basis: 30px;
-  
-}
-
-#skills span {
-  background: lightgreen;
-  width: 100px;
-  height: 20px;
-  padding: 0 5px;
-}
-
-#skills progress[value] {
-  -webkit-appearance: none;
-  appearance: none;
-  height: 20px;
-  width: 450px;  
-}
-
-
 
 
 /* TECHNOLOGIES SECTION */
