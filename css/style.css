@@ -5,6 +5,8 @@
   --lightgray: #E9ECEF;
   --gray: #797979;
   --darkgray: #212528;
+  --lightblue: #58A7CC;
+  --darkblue: #267599;
 }
 
 * {
@@ -53,7 +55,7 @@ header .container {
   display: flex;
   flex-wrap: nowrap;
   font-size: 30px;
-  color: darkorange;
+  color: var(--lightblue);
   font-family: 'Oleo Script', cursive;
   transition: font-size .2s ease-in;
 }
@@ -109,7 +111,7 @@ nav li {
 }
 
 nav li:hover {
-  color: darkorange;
+  color: var(--lightblue);
 }
 
 #inner-nav {
@@ -210,7 +212,7 @@ section h3 {
 }
 
 #intro .button {
-  background: orange;
+  background-color: var(--darkblue);
   color: white;
   border-radius: 5px;
   padding: 20px 40px;
@@ -220,7 +222,7 @@ section h3 {
 }
 
 #intro .button:hover {
-  background: darkorange;
+  background-color: var(--lightblue);
 }
 
 /* ABOUT SECTIONS*/
@@ -232,7 +234,7 @@ section h3 {
 
 .service-icon {
   font-size: 70px;
-  background: orange;
+  background: var(--lightblue);
   color: white;
   width: 120px;
   padding: 25px 0;
@@ -335,7 +337,7 @@ section h3 {
   position: absolute;
   top: 0;
   left: 0;
-  background: orange;
+  background-color: var(--lightblue);
   opacity: 0;
   z-index: 1;
 }
@@ -516,7 +518,7 @@ section h3 {
 }
 
 .social-media li:hover {
-  background: darkorange;
+  background: var(--lightblue);
 }
 
 .social-media a {
@@ -651,7 +653,7 @@ section h3 {
   height: 50px;
   width: 200px;
   margin: 0 auto;
-  background: orange;
+  background: var(--darkblue);
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -661,7 +663,7 @@ section h3 {
 }
 
 #form input[type="submit"]:hover {
-  background: darkorange;
+  background: var(--lightblue);
 }
 
 /* FOOTER */
@@ -691,7 +693,7 @@ footer .social-media {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  color: orange;
+  color: var(--lightblue);
 }
 
 #policies p {
@@ -962,7 +964,6 @@ footer .social-media {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    color: orange;
 */
   }
 

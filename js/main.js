@@ -99,13 +99,13 @@ window.addEventListener('scroll', () => {
 //  }
   
   if (portfolioSection.getBoundingClientRect().top <= 10 && portfolioSection.getBoundingClientRect().bottom >= 10) {
-    portfolioNav.style.color = 'orange';
+    portfolioNav.style.color = 'var(--lightblue)';
   } else {
     portfolioNav.style.color = 'white';
   }
   
   if (aboutSection.getBoundingClientRect().top <= 10 && aboutSection.getBoundingClientRect().bottom >= 10) {
-    aboutNav.style.color = 'orange';
+    aboutNav.style.color = 'var(--lightblue)';
   } else {
     aboutNav.style.color = 'white';
   }
@@ -117,7 +117,7 @@ window.addEventListener('scroll', () => {
 //  }
   
   if (contactSection.getBoundingClientRect().top <= 100) {
-    contactNav.style.color = 'orange';
+    contactNav.style.color = 'var(--lightblue)';
   } else {
     contactNav.style.color = 'white';
   }
