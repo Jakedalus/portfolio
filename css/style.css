@@ -400,15 +400,68 @@ section h3 {
 }
 
 .project-detail__content {
+  display: flex;
+  justify-content: space-around;
   background: white;
+  background-color: var(--lightgray);
   padding: 50px;
   margin: 20px;
 }
 
+.project-detail__image-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-detail__info-panel {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  text-align: left;
+}
+
+.project-detail__subsection {
+  margin-bottom: 20px;
+}
+
+.project-detail__subsection h6 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.project-detail__links-section {
+  display: flex;
+  justify-content: space-around;
+  justify-content: flex-start;
+  width: 70%;
+  /*margin: 0 auto;*/
+}
+
+.project-detail__link {
+  display: flex;
+  justify-content: center;
+  width: 90px;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 5px;
+  background-color: var(--darkblue);
+  color: white;
+}
+
+.project-detail__link i {
+  margin-right: 7px;
+}
+
+.project-detail__link:hover {
+  background-color: var(--lightblue);
+}
+
 .project-detail img, .project-detail p {
-  width: 700px;
+  width: 500px;
   margin: 10px auto;
   object-fit: cover;
+  margin: 5px 0;
 }
 
 .close-project-detail {

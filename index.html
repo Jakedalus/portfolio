@@ -142,48 +142,48 @@
         <div class="grid">
          
           <div class="project">
-            <div class="img-container" data-project="project1">
-              <img src="/images/resgen.png" alt="project one">
+            <div class="img-container" data-project="resgen">
+              <img src="/images/resgen.png" alt="resume generator">
               <div class="zoom"><i class="fas fa-plus"></i></div>
             </div>
             <h4>Resume Generator</h4>
             <h5>Site for guiding users in creating a resume</h5>
           </div>
           <div class="project">
-            <div class="img-container" data-project="project2">
-              <img src="/images/headscroll.png" alt="project three">
+            <div class="img-container" data-project="headscroll">
+              <img src="/images/headscroll.png" alt="headscroll social media app">
               <div class="zoom"><i class="fas fa-plus"></i></div>
             </div>
             <h4>Headscroll</h4>
             <h5>Social Media Site</h5>
           </div>
           <div class="project">
-            <div class="img-container" data-project="project2">
-              <img src="/images/pomodoro.png" alt="project two">
+            <div class="img-container" data-project="pomodoro">
+              <img src="/images/pomodoro.png" alt="pomodoro">
               <div class="zoom"><i class="fas fa-plus"></i></div>
             </div>
             <h4>Pomodoro</h4>
             <h5>Adjustable timer for productivity</h5>
           </div>
           <div class="project">
-            <div class="img-container" data-project="project4">
-              <img src="/images/simon.png" alt="project four">
+            <div class="img-container" data-project="simon">
+              <img src="/images/simon.png" alt="simon game">
               <div class="zoom"><i class="fas fa-plus"></i></div>
             </div>
             <h4>Simon Game</h4>
             <h5>A JS replica of the nostalgic game</h5>
           </div>
           <div class="project">
-            <div class="img-container" data-project="project6">
-              <img src="/images/calculator.png" alt="project six">
+            <div class="img-container" data-project="calculator">
+              <img src="/images/calculator.png" alt="calculator">
               <div class="zoom"><i class="fas fa-plus"></i></div>
             </div>
             <h4>Calculator</h4>
             <h5>A replica of an old 70s calculator</h5>
           </div>
           <div class="project">
-            <div class="img-container" data-project="project5">
-              <img src="/images/tictactoe.png" alt="project five">
+            <div class="img-container" data-project="tictactoe">
+              <img src="/images/tictactoe.png" alt="tictactoe">
               <div class="zoom"><i class="fas fa-plus"></i></div>
             </div>
             <h4>Tic Tac Toe</h4>
@@ -319,63 +319,155 @@
     </footer>
     
     <!-- PROJECT DETAIL MODALS    -->
-    <div class="project-detail" data-project="project1">
+    <div class="project-detail" data-project="resgen">
       <div class="project-detail__content">
         <span class="close-project-detail"><i class="fas fa-times"></i></span>
-        <h4>Resume Generator</h4>
-        <h5>Type of work</h5>
-        <img src="/images/resgen.png" alt="project one">
-        <p>Nam commodo arcu non elit viverra auctor. Mauris accumsan mi quis nunc interdum hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Nunc venenatis sodales metus, et pharetra justo porta at. Proin ullamcorper eget nisi vel sagittis. Aenean semper neque sagittis mollis rhoncus.</p>
+        <div class="project-detail__image-panel">
+          <h4>Resume Generator</h4>
+          <h5>Type of work</h5>
+          <img src="/images/resgen.png" alt="resume generator">
+        </div>
+        <div class="project-detail__info-panel">
+          <p>Nam commodo arcu non elit viverra auctor. Mauris accumsan mi quis nunc interdum hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Nunc venenatis sodales metus, et pharetra justo porta at. Proin ullamcorper eget nisi vel sagittis. Aenean semper neque sagittis mollis rhoncus.</p>
+          <div class="project-detail__subsection">
+            <h6>Frontend Stack</h6>
+            <p>HTML, CSS, JS, React</p>
+          </div>
+          <div class="project-detail__subsection">
+            <h6>Backend Stack</h6>
+            <p>Node.js, Express, Mongodb</p>
+          </div>
+          <div class="project-detail__subsection">
+            <h6>Tooling</h6>
+            <p>Jest</p>
+          </div>
+          <div class="project-detail__links-section">
+            <a class="project-detail__link" href=""><i class="fas fa-desktop"></i>Site</a>
+            <a class="project-detail__link" href=""><i class="fas fa-code"></i>Code</a>
+          </div>
+        </div>
       </div>
     </div>
     
-    <div class="project-detail" data-project="project2">
+    <div class="project-detail" data-project="headscroll">
       <div class="project-detail__content">
         <span class="close-project-detail"><i class="fas fa-times"></i></span>
-        <h4>Headscroll</h4>
-        <h5>Type of work</h5>
-        <img src="/images/headscroll.png" alt="project two">
-        <p>Nam commodo arcu non elit viverra auctor. Mauris accumsan mi quis nunc interdum hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Nunc venenatis sodales metus, et pharetra justo porta at. Proin ullamcorper eget nisi vel sagittis. Aenean semper neque sagittis mollis rhoncus.</p>
+        <div class="project-detail__image-panel">
+          <h4>Headscroll</h4>
+          <h5>Type of work</h5>
+          <img src="/images/headscroll.png" alt="headscroll">
+        </div>
+        <div class="project-detail__info-panel">
+          <p>Social media CRUD app where you can add and request friends, make/edit/delete posts and comments, and upload profile pictures. </p>
+          <div class="project-detail__subsection">
+            <h6>Frontend Stack</h6>
+            <p>HTML, CSS, JS, React</p>
+          </div>
+          <div class="project-detail__subsection">
+            <h6>Backend Stack</h6>
+            <p>Node.js, Express, Mongodb</p>
+          </div>
+          <div class="project-detail__subsection">
+            <h6>Tooling</h6>
+            <p>Jest</p>
+          </div>
+          <div class="project-detail__links-section">
+            <a class="project-detail__link" href=""><i class="fas fa-desktop"></i>Site</a>
+            <a class="project-detail__link" href=""><i class="fas fa-code"></i>Code</a>
+          </div>
+        </div>
       </div>
     </div>
     
-    <div class="project-detail" data-project="project3">
+    <div class="project-detail" data-project="pomodoro">
       <div class="project-detail__content">
         <span class="close-project-detail"><i class="fas fa-times"></i></span>
-        <h4>Project 3</h4>
-        <h5>Type of work</h5>
-        <img src="/images/pomodoro.png" alt="project three">
-        <p>Nam commodo arcu non elit viverra auctor. Mauris accumsan mi quis nunc interdum hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Nunc venenatis sodales metus, et pharetra justo porta at. Proin ullamcorper eget nisi vel sagittis. Aenean semper neque sagittis mollis rhoncus.</p>
+        <div class="project-detail__image-panel">
+          <h4>Pomodoro</h4>
+          <h5>Type of work</h5>
+          <img src="/images/pomodoro.png" alt="pomodoro">
+        </div>
+        <div class="project-detail__info-panel">
+          <p>Nam commodo arcu non elit viverra auctor. Mauris accumsan mi quis nunc interdum hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Nunc venenatis sodales metus, et pharetra justo porta at. Proin ullamcorper eget nisi vel sagittis. Aenean semper neque sagittis mollis rhoncus.</p>
+          <div class="project-detail__subsection">
+            <h6>Stack</h6>
+            <p>HTML, CSS, JS</p>
+          </div>
+          <div class="project-detail__links-section">
+            <a class="project-detail__link" href=""><i class="fas fa-desktop"></i>Site</a>
+            <a class="project-detail__link" href=""><i class="fas fa-code"></i>Code</a>
+          </div>
+        </div>
       </div>
     </div>
     
-    <div class="project-detail" data-project="project4">
+    <div class="project-detail" data-project="simon">
       <div class="project-detail__content">
         <span class="close-project-detail"><i class="fas fa-times"></i></span>
-        <h4>Simon Game</h4>
-        <h5>Type of work</h5>
-        <img src="/images/simon.png" alt="project four">
-        <p>Nam commodo arcu non elit viverra auctor. Mauris accumsan mi quis nunc interdum hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Nunc venenatis sodales metus, et pharetra justo porta at. Proin ullamcorper eget nisi vel sagittis. Aenean semper neque sagittis mollis rhoncus.</p>
+        <div class="project-detail__image-panel">
+          <h4>Simon Game</h4>
+          <h5>Type of work</h5>
+          <img src="/images/simon.png" alt="simon game">
+        </div>
+        <div class="project-detail__info-panel">
+          <p>Nam commodo arcu non elit viverra auctor. Mauris accumsan mi quis nunc interdum hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Nunc venenatis sodales metus, et pharetra justo porta at. Proin ullamcorper eget nisi vel sagittis. Aenean semper neque sagittis mollis rhoncus.</p>
+          <div class="project-detail__subsection">
+            <h6>Stack</h6>
+            <p>HTML, CSS, JS</p>
+          </div>
+          <div class="project-detail__subsection">
+            <h6>Other Tools</h6>
+            <p>Adobe Illustrator</p>
+          </div>
+          <div class="project-detail__links-section">
+            <a class="project-detail__link" href=""><i class="fas fa-desktop"></i>Site</a>
+            <a class="project-detail__link" href=""><i class="fas fa-code"></i>Code</a>
+          </div>
+        </div>
       </div>
     </div>
     
-    <div class="project-detail" data-project="project5">
+    <div class="project-detail" data-project="tictactoe">
       <div class="project-detail__content">
         <span class="close-project-detail"><i class="fas fa-times"></i></span>
-        <h4>Tic Tac Toe</h4>
-        <h5>Type of work</h5>
-        <img src="/images/tictactoe.png" alt="project five">
-        <p>Nam commodo arcu non elit viverra auctor. Mauris accumsan mi quis nunc interdum hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Nunc venenatis sodales metus, et pharetra justo porta at. Proin ullamcorper eget nisi vel sagittis. Aenean semper neque sagittis mollis rhoncus.</p>
+        <div class="project-detail__image-panel">
+          <h4>Tic Tac Toe</h4>
+          <h5>Type of work</h5>
+          <img src="/images/tictactoe.png" alt="tic tac toe">
+        </div>
+        <div class="project-detail__info-panel">
+          <p>Nam commodo arcu non elit viverra auctor. Mauris accumsan mi quis nunc interdum hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Nunc venenatis sodales metus, et pharetra justo porta at. Proin ullamcorper eget nisi vel sagittis. Aenean semper neque sagittis mollis rhoncus.</p>
+          <div class="project-detail__subsection">
+            <h6>Stack</h6>
+            <p>HTML, CSS, JS, Vue</p>
+          </div>
+          <div class="project-detail__links-section">
+            <a class="project-detail__link" href=""><i class="fas fa-desktop"></i>Site</a>
+            <a class="project-detail__link" href=""><i class="fas fa-code"></i>Code</a>
+          </div>
+        </div>
       </div>
     </div>
     
-    <div class="project-detail" data-project="project6">
+    <div class="project-detail" data-project="calculator">
       <div class="project-detail__content">
         <span class="close-project-detail"><i class="fas fa-times"></i></span>
-        <h4>Calculator</h4>
-        <h5>Type of work</h5>
-        <img src="/images/calculator.png" alt="project six">
-        <p>Nam commodo arcu non elit viverra auctor. Mauris accumsan mi quis nunc interdum hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Nunc venenatis sodales metus, et pharetra justo porta at. Proin ullamcorper eget nisi vel sagittis. Aenean semper neque sagittis mollis rhoncus.</p>
+        <div class="project-detail__image-panel">
+          <h4>Calculator</h4>
+          <h5>Type of work</h5>
+          <img src="/images/calculator.png" alt="calculator">
+        </div>
+        <div class="project-detail__info-panel">
+          <p>Nam commodo arcu non elit viverra auctor. Mauris accumsan mi quis nunc interdum hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Nunc venenatis sodales metus, et pharetra justo porta at. Proin ullamcorper eget nisi vel sagittis. Aenean semper neque sagittis mollis rhoncus.</p>
+          <div class="project-detail__subsection">
+            <h6>Stack</h6>
+            <p>HTML, CSS, JS</p>
+          </div>
+          <div class="project-detail__links-section">
+            <a class="project-detail__link" href=""><i class="fas fa-desktop"></i>Site</a>
+            <a class="project-detail__link" href=""><i class="fas fa-code"></i>Code</a>
+          </div>
+        </div>
       </div>
     </div>
     
