@@ -287,12 +287,15 @@
         <h2>CONTACT ME</h2>
         <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua.</h3>
-        <form id="form" action="mailto:jacob.a.carpenter@gmail.com" method="post" enctype="text/plain">
+        <form id="form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
           <div class="contact-form__content">
             <div class="contact-form__inputs">
               <input name="name" type="text" id="name" placeholder="Your Name *" required>
               <input name="email" type="email" id="email" placeholder="Your Email *" required>
               <input name="phone" type="text" id="phone" placeholder="Your Phone ">
+              <div class="hidden-bot-field">
+                <label >Don’t fill this out if you're human: <input name="bot-field" /></label>
+              </div>
             </div>
             <div class="contact-form__inputs">
               <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message *" required></textarea>

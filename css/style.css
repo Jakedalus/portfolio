@@ -671,6 +671,10 @@ section h3 {
   
 }
 
+.hidden-bot-field {
+  display: none;
+}
+
 .contact-form__content {
   display: flex;
   flex-direction: row;
