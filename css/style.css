@@ -756,6 +756,17 @@ footer .social-media {
   color: var(--lightblue);
 }
 
+#policies a {
+  font-family: 'Merriweather', serif;
+  color: var(--darkblue);
+  border-bottom: 1px solid white;
+  transition: border-bottom .15s;
+}
+
+#policies a:hover {
+  border-bottom: 1px solid var(--darkblue);
+}
+
 #policies p {
   padding-right: 10px;
 }
