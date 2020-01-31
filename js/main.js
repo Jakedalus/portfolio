@@ -116,7 +116,7 @@ window.addEventListener('scroll', () => {
 //    teamNav.style.color = 'white';
 //  }
   
-  if (contactSection.getBoundingClientRect().top <= 100) {
+  if (contactSection.getBoundingClientRect().top <= 10) {
     contactNav.style.color = 'var(--lightblue)';
   } else {
     contactNav.style.color = 'white';
