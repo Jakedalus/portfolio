@@ -10,6 +10,7 @@
   --aqua: #87FFE4;
   --pink: #FFCDC7;
   --red: #CC6270;
+  --side-padding: 120px;
 }
 
 * {
@@ -41,15 +42,19 @@ header {
 }
 
 .container {
-  padding: 20px 100px;
+  padding: 20px var(--side-padding);
+  width: 80%;
+  margin: 0 auto;
   
-  transition: padding .2s ease-in;
+  /*transition: padding .2s ease-in;*/
 }
 
 header .container {
   display: flex;
+  align-items: center;
   flex-wrap: nowrap;
   justify-content: space-between;
+  transition: padding .2s ease-in;
   animation: .8s ease-in-out fadeIn;
 }
 
@@ -84,7 +89,7 @@ a {
   
 }
 
-#intro * {
+#intro .container * {
   animation: .8s ease-in-out .4s fadeInMoveUp backwards;
 }
 
@@ -120,7 +125,7 @@ nav li:hover {
 #inner-nav {
   transition: transform .2s ease-in-out;
   transform-origin: top;
-  padding: 10px 15px 10px 0;
+  /*padding: 10px 15px 10px 0;*/
 }
 
 #hamburger {
@@ -151,21 +156,30 @@ nav li:hover {
 }
 
 main {
-/*   margin-top: 200px; */
+  width: 100%;
+  background-color: var(--darkblue);  
 }
 
 section {
+/*  display: flex;
+  flex-direction: column;
+  align-items: flex-start;*/
 /*  height: 300px;*/
-  height: 100%;
+  height: 100%;   
+  /*width: 80%;*/
+  margin: 0 auto;
+  /*width: 80%;*/
 /*   padding-top: 50px; */
 /*   border: 2px solid black; */
-  margin: 0px auto;
-  padding: 150px 20px;
-  text-align: center;
+  /*margin: 0px auto;*/
+  /*padding: var(--side-padding);*/
+  /*text-align: left;*/
 }
 
 section:nth-child(2n+1) {
-  background: var(--offwhite);
+  /*background: var(--offwhite);*/
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: darken;
 }
 
 .row {
@@ -189,25 +203,27 @@ section h3 {
 /* INTRO SECTION */
 #intro {
   height: 700px;
-  background-image: url(/images/desk_background.jpg);
-  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 50px;
+  /*background-image: url(/images/desk_background.jpg);*/
+  /*background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: darken;
-  background-repeat: no-repeat;
+*/ /* background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: cover;*/
   color: white;
+  text-align: left;
 }
 
 
 
 #intro h1 {
-  font-size: 6em;
+  font-size: 4em;
   margin: 20px 0 60px 0;
 }
 
 #intro h2 {
   padding-top: 90px;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 #intro a {
@@ -315,10 +331,17 @@ section h3 {
   grid-gap: 10px;
 }
 
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .project {
   width: 350px;
-  margin: 10px auto;
   background: white;
+  margin-bottom: 40px;
 }
 
 .img-container {
@@ -565,7 +588,7 @@ section h3 {
   width: 50px;
   height: 50px;
   line-height: 50px;
-  margin: 5px;
+  margin-right: 5px;
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
@@ -586,7 +609,7 @@ section h3 {
   width: 700px;
   margin: 0 auto;
   color: var(--gray);
-  text-align: center;
+  /*text-align: center;*/
 }
 
 
@@ -651,12 +674,12 @@ section h3 {
 /* CONTACT SECTION */
 
 #contact {
-  background-color: rgba(0, 0, 0, 0.3);
+/*  background-color: rgba(0, 0, 0, 0.3);
   background-image: url(/images/earth.jpg);
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 #contact h2 {
@@ -666,8 +689,8 @@ section h3 {
 #form {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%; 
+  /*margin: 0 auto;*/
   
 }
 
@@ -679,12 +702,12 @@ section h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
 .contact-form__inputs {
-  width: 50%;
+  width: 49%; 
   margin: 0;
   padding: 0;
 }
@@ -697,15 +720,17 @@ section h3 {
 
 #form input {
   height: 80px;
-  width: 480px;
+  /*width: 340px;*/
+  width: 100%;
   padding: 0 10px;
   margin-bottom: 20px;
 }
 
 #form textarea {
   height: 280px;
-  width: 480px;
-  padding: 20px;
+  /*width: 380px;*/
+  width: 100%;
+  padding: 10px;
 }
 
 #form input[type="submit"] {
@@ -770,6 +795,9 @@ footer .social-media {
 #policies p {
   padding-right: 10px;
 }
+
+
+/* MEDIA QUERIES */
 
 @media (max-width: 1152px) {
  
@@ -852,6 +880,13 @@ footer .social-media {
     grid-gap: 0px;
     width: 90%;
     margin: 0 auto;
+  }
+
+  #projects .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: purple;
   }
   
   .project {

@@ -1,7 +1,7 @@
 const introSection = document.querySelector('#intro');
 //const servicesSection = document.querySelector('#services');
 const portfolioSection = document.querySelector('#projects');
-const aboutSection = document.querySelector('#about');
+// const aboutSection = document.querySelector('#about');
 //const teamSection = document.querySelector('#team');
 const contactSection = document.querySelector('#contact');
 
@@ -83,12 +83,12 @@ window.addEventListener('scroll', () => {
     header.style.backgroundColor = 'var(--darkgray)';
     innerNav.style.backgroundColor = 'var(--darkgray)';
     home.style.fontSize = '25px';
-    headerContainer.style.padding = '10px 100px';
+    headerContainer.style.padding = '10px 120px';
   } else if (introSection.getBoundingClientRect().top <= 10) {
     header.style.backgroundColor = 'transparent';
     innerNav.style.backgroundColor = 'transparent';
     home.style.fontSize = '30px';
-    headerContainer.style.padding = '20px 100px';
+    headerContainer.style.padding = '20px 120px';
   }
   
   //Highlight the navbar links when section is in view
@@ -104,11 +104,11 @@ window.addEventListener('scroll', () => {
     portfolioNav.style.color = 'white';
   }
   
-  if (aboutSection.getBoundingClientRect().top <= 10 && aboutSection.getBoundingClientRect().bottom >= 10) {
-    aboutNav.style.color = 'var(--lightblue)';
-  } else {
-    aboutNav.style.color = 'white';
-  }
+  // if (aboutSection.getBoundingClientRect().top <= 10 && aboutSection.getBoundingClientRect().bottom >= 10) {
+  //   aboutNav.style.color = 'var(--lightblue)';
+  // } else {
+  //   aboutNav.style.color = 'white';
+  // }
   
 //  if (teamSection.getBoundingClientRect().top <= 10 && teamSection.getBoundingClientRect().bottom >= -100) {
 //    teamNav.style.color = 'orange';

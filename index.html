@@ -22,7 +22,7 @@
         
         <nav id="nav-bar">
           <div id="inner-nav">
-            <a href="#about" class="nav-link"><li>About</li></a>
+            <!-- <a href="#about" class="nav-link"><li>About</li></a> -->
 <!--            <a href="#skills" class="nav-link"><li>Skills</li></a>-->
             <a href="#projects" class="nav-link"><li>Projects</li></a>
             <!-- <a href="#experience" class="nav-link"><li>Experience</li></a> -->
@@ -40,22 +40,25 @@
     <main>
 
       <section id="intro">
-        <h2>Welcome!</h2>
-        <h1>Jacob A. Carpenter</h1>
-        <ul class="social-media">
-					<li><a href="https://github.com/Jakedalus"><i class="fab fa-github"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/jacob-carpenter-64a6365/"><i class="fab fa-linkedin-in"></i></a></li>
-					<li><a href="https://codepen.io/Jakedalus/"><i class="fab fa-codepen"></i></a></li>
-					<li><a href="https://twitter.com/jakedalus"><i class="fab fa-twitter"></i></a></li>
-				</ul>
-        <a class="button" href="#projects">See Projects</a>
+        <div class="container">
+          <h2>Welcome!</h2>
+          <h1>Jacob A. Carpenter</h1>
+          <p>Adjunct philosophy professor and self-taught web developer with experience creating fullstack MERN apps.</p>
+          <ul class="social-media">
+  					<li><a href="https://github.com/Jakedalus"><i class="fab fa-github"></i></a></li>
+  					<li><a href="https://www.linkedin.com/in/jacob-carpenter-64a6365/"><i class="fab fa-linkedin-in"></i></a></li>
+  					<li><a href="https://codepen.io/Jakedalus/"><i class="fab fa-codepen"></i></a></li>
+  					<li><a href="https://twitter.com/jakedalus"><i class="fab fa-twitter"></i></a></li>
+  				</ul>
+          <a class="button" href="#contact">Contact Me</a>
+        </div>
       </section>
 
-      <section id="about">
+ <!--      <section id="about">
         <h2>ABOUT</h2>
         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         <div id="about-subsection">
-<!--
+
           <div>
             <img id="avatar" src="/images/dummy_avatar.jpg" alt="jacob carpenter">
            	<ul id="skills">
@@ -73,13 +76,13 @@
 							<li><span>Webpack</span><progress id="html" max="100" value="65"> 65% </progress></li>
 						</ul>
           </div>
--->
+
           <div class="about-subsection__paragraphs">
             <p>Curabitur id interdum dui. Fusce posuere, risus sed tempor venenatis, nisi ex dignissim nulla, et bibendum tortor sapien ullamcorper est. In in nisl mauris. Aenean dictum eros id scelerisque lacinia. Maecenas viverra dui sit amet elit pretium accumsan.</p>
             <p>Curabitur id interdum dui. Fusce posuere, risus sed tempor venenatis, nisi ex dignissim nulla, et bibendum tortor sapien ullamcorper est. In in nisl mauris. Aenean dictum eros id scelerisque lacinia. Maecenas viverra dui sit amet elit pretium accumsan.</p>
           </div>
           
-        </div>
+        </div> -->
         
 <!--
         <div class="row">
@@ -136,61 +139,62 @@
 -->
 
       <section id="projects">
-        <h2>PROJECTS</h2>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        
-        <div class="grid">
-         
-          <div class="project">
-            <div class="img-container" data-project="resgen">
-              <img src="/images/resgen.png" alt="resume generator">
-              <div class="zoom"><i class="fas fa-plus"></i></div>
+        <div class="container">
+          <h2>PROJECTS</h2>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          
+          <div class="projects-container">
+           
+            <div class="project">
+              <div class="img-container" data-project="resgen">
+                <img src="/images/resgen.png" alt="resume generator">
+                <div class="zoom"><i class="fas fa-plus"></i></div>
+              </div>
+              <h4>Resume Generator</h4>
+              <h5>Site for guiding users in creating a resume</h5>
             </div>
-            <h4>Resume Generator</h4>
-            <h5>Site for guiding users in creating a resume</h5>
-          </div>
-          <div class="project">
-            <div class="img-container" data-project="headscroll">
-              <img src="/images/headscroll.png" alt="headscroll social media app">
-              <div class="zoom"><i class="fas fa-plus"></i></div>
+            <div class="project">
+              <div class="img-container" data-project="headscroll">
+                <img src="/images/headscroll.png" alt="headscroll social media app">
+                <div class="zoom"><i class="fas fa-plus"></i></div>
+              </div>
+              <h4>Headscroll</h4>
+              <h5>Social Media Site</h5>
             </div>
-            <h4>Headscroll</h4>
-            <h5>Social Media Site</h5>
-          </div>
-          <div class="project">
-            <div class="img-container" data-project="pomodoro">
-              <img src="/images/pomodoro.png" alt="pomodoro">
-              <div class="zoom"><i class="fas fa-plus"></i></div>
+            <div class="project">
+              <div class="img-container" data-project="pomodoro">
+                <img src="/images/pomodoro.png" alt="pomodoro">
+                <div class="zoom"><i class="fas fa-plus"></i></div>
+              </div>
+              <h4>Pomodoro</h4>
+              <h5>Adjustable timer for productivity</h5>
             </div>
-            <h4>Pomodoro</h4>
-            <h5>Adjustable timer for productivity</h5>
-          </div>
-          <div class="project">
-            <div class="img-container" data-project="simon">
-              <img src="/images/simon.png" alt="simon game">
-              <div class="zoom"><i class="fas fa-plus"></i></div>
+            <div class="project">
+              <div class="img-container" data-project="simon">
+                <img src="/images/simon.png" alt="simon game">
+                <div class="zoom"><i class="fas fa-plus"></i></div>
+              </div>
+              <h4>Simon Game</h4>
+              <h5>A JS replica of the nostalgic game</h5>
             </div>
-            <h4>Simon Game</h4>
-            <h5>A JS replica of the nostalgic game</h5>
-          </div>
-          <div class="project">
-            <div class="img-container" data-project="calculator">
-              <img src="/images/calculator.png" alt="calculator">
-              <div class="zoom"><i class="fas fa-plus"></i></div>
+            <div class="project">
+              <div class="img-container" data-project="calculator">
+                <img src="/images/calculator.png" alt="calculator">
+                <div class="zoom"><i class="fas fa-plus"></i></div>
+              </div>
+              <h4>Calculator</h4>
+              <h5>A replica of an old 70s calculator</h5>
             </div>
-            <h4>Calculator</h4>
-            <h5>A replica of an old 70s calculator</h5>
-          </div>
-          <div class="project">
-            <div class="img-container" data-project="tictactoe">
-              <img src="/images/tictactoe.png" alt="tictactoe">
-              <div class="zoom"><i class="fas fa-plus"></i></div>
+            <div class="project">
+              <div class="img-container" data-project="tictactoe">
+                <img src="/images/tictactoe.png" alt="tictactoe">
+                <div class="zoom"><i class="fas fa-plus"></i></div>
+              </div>
+              <h4>Tic Tac Toe</h4>
+              <h5>Tic Tac Toe game with 3 levels of difficulty</h5>
             </div>
-            <h4>Tic Tac Toe</h4>
-            <h5>Tic Tac Toe game with 3 levels of difficulty</h5>
           </div>
         </div>
-        
       </section>
 
       <!-- <section id="experience">
@@ -284,25 +288,28 @@
       
 
       <section id="contact">
-        <h2>CONTACT ME</h2>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.</h3>
-        <form id="form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-          <div class="contact-form__content">
-            <div class="contact-form__inputs">
-              <input name="name" type="text" id="name" placeholder="Your Name *" required>
-              <input name="email" type="email" id="email" placeholder="Your Email *" required>
-              <input name="phone" type="text" id="phone" placeholder="Your Phone ">
-              <div class="hidden-bot-field">
-                <label >Don’t fill this out if you're human: <input name="bot-field" /></label>
+        <div class="container">
+          <h2>CONTACT ME</h2>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.</h3>
+          <form id="form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+            <div class="contact-form__content">
+              <div class="contact-form__inputs">
+                <input name="name" type="text" id="name" placeholder="Your Name *" required>
+                <input name="email" type="email" id="email" placeholder="Your Email *" required>
+                <input name="phone" type="text" id="phone" placeholder="Your Phone ">
+                <div class="hidden-bot-field">
+                  <label >Don’t fill this out if you're human: <input name="bot-field" /></label>
+                </div>
+              </div>
+              <div class="contact-form__inputs">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message *" required></textarea>
               </div>
             </div>
-            <div class="contact-form__inputs">
-              <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message *" required></textarea>
-            </div>
-          </div>
-          <input type="submit" value="SEND MESSAGE"/>
-        </form>
+            <input type="submit" value="SEND MESSAGE"/>
+          </form>
+        </div>
+        
       </section>
     </main>
 
