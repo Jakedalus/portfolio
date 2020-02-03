@@ -747,10 +747,9 @@ section h3 {
 }
 
 #form input[type="submit"] {
-  grid-area: submit;
+  margin-left: auto;  
   height: 50px;
   width: 200px;
-  margin: 0 auto;
   background: var(--darkblue);
   color: white;
   font-size: 16px;
@@ -814,13 +813,13 @@ footer .social-media {
 
 @media (max-width: 1152px) {
  
-  #form input {
+  /*#form input {
     width: 380px;
   }
 
   #form textarea {
     width: 380px;
-  }
+  }*/
 }
 
 
