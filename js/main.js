@@ -74,7 +74,7 @@ year.textContent = new Date().getFullYear();
 
 // Scroll behavior
 window.addEventListener('scroll', () => {
-//  console.log("window.innerHeight:", window.innerHeight);
+ console.log("window.innerHeight:", window.innerHeight);  
 //  console.log("shrink navbar:", introSection.getBoundingClientRect().bottom - window.innerHeight <= 0);
 //  console.log("highlight SERVICES:", servicesSection.getBoundingClientRect().top <= 10);
   
@@ -97,8 +97,10 @@ window.addEventListener('scroll', () => {
 //  } else {
 //    servicesNav.style.color = 'white';
 //  }
+
+  console.log(portfolioSection.getBoundingClientRect().top, portfolioSection.getBoundingClientRect().bottom);
   
-  if (portfolioSection.getBoundingClientRect().top <= 10 && portfolioSection.getBoundingClientRect().bottom >= 10) {
+  if (portfolioSection.getBoundingClientRect().top <= 50 && portfolioSection.getBoundingClientRect().bottom >= 50) {
     portfolioNav.style.color = 'var(--lightblue)';
   } else {
     portfolioNav.style.color = 'white';
@@ -116,7 +118,7 @@ window.addEventListener('scroll', () => {
 //    teamNav.style.color = 'white';
 //  }
   
-  if (contactSection.getBoundingClientRect().top <= 10) {
+  if (contactSection.getBoundingClientRect().top <= 50) {
     contactNav.style.color = 'var(--lightblue)';
   } else {
     contactNav.style.color = 'white';
