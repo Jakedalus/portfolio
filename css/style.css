@@ -231,6 +231,10 @@ section h3 {
   font-size: 1.5em;
 }
 
+#intro .social-media {
+  margin: 30px 0 50px 0;
+}
+
 #intro .button {
   background-color: var(--darkblue);
   color: white;
