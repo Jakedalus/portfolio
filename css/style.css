@@ -343,11 +343,14 @@ section h3 {
   width: 350px;
   background: white;
   margin-bottom: 40px;
+  text-align: center;
+  border-radius: 5px;
 }
 
 .img-container {
   position: relative;
   z-index: 1;
+
 }
 
 
@@ -358,6 +361,7 @@ section h3 {
   transition: opacity 0.3s ease-in;
   z-index: 1;
   object-fit: cover;
+  border-radius: 5px 5px 0 0;
 }
 
 .zoom {
