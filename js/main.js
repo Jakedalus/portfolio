@@ -101,7 +101,7 @@ window.addEventListener('scroll', () => {
   console.log(portfolioSection.getBoundingClientRect().top, portfolioSection.getBoundingClientRect().bottom);
   
   if (portfolioSection.getBoundingClientRect().top <= 50 && portfolioSection.getBoundingClientRect().bottom >= 50) {
-    portfolioNav.style.color = 'var(--lightblue)';
+    portfolioNav.style.color = 'var(--green)';
   } else {
     portfolioNav.style.color = 'white';
   }
@@ -119,7 +119,7 @@ window.addEventListener('scroll', () => {
 //  }
   
   if (contactSection.getBoundingClientRect().top <= 50) {
-    contactNav.style.color = 'var(--lightblue)';
+    contactNav.style.color = 'var(--green)';
   } else {
     contactNav.style.color = 'white';
   }

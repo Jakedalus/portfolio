@@ -5,9 +5,11 @@
   --lightgray: #E9ECEF;
   --gray: #797979;
   --darkgray: #212528;
-  --lightblue: #58A7CC;
-  --darkblue: #267599;
-  --aqua: #87FFE4;
+  --lightblue: #00B0E6;
+  --green: #87FFE4;
+  --hightlight-color: var(--green);
+  --blue: #007599;
+  --darkblue: #0B222D;
   --pink: #FFCDC7;
   --red: #CC6270;
   --side-padding: 120px;
@@ -63,9 +65,13 @@ header .container {
   display: flex;
   flex-wrap: nowrap;
   font-size: 30px;
-  color: var(--lightblue);
+  color: white;
   font-family: 'Oleo Script', cursive;
   transition: font-size .2s ease-in;
+}
+
+#home-page:hover {
+  color: var(--green);
 }
 
 #header-img {
@@ -119,7 +125,7 @@ nav li {
 }
 
 nav li:hover {
-  color: var(--lightblue);
+  color: var(--green);
 }
 
 #inner-nav {
@@ -157,7 +163,7 @@ nav li:hover {
 
 main {
   width: 100%;
-  background-color: var(--darkblue);  
+  background-color: var(--blue);  
 }
 
 section {
@@ -178,9 +184,9 @@ section {
 }
 
 section:nth-child(2n+1) {
-  /*background: var(--offwhite);*/
-  background-color: rgba(0, 0, 0, 0.7);
-  background-blend-mode: darken;
+  background-color: var(--darkblue);
+ /* background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: darken;*/
 }
 
 .row {
@@ -236,7 +242,7 @@ section h3 {
 }
 
 #intro .button {
-  background-color: var(--darkblue);
+  background-color: var(--blue);
   color: white;
   border-radius: 5px;
   padding: 20px 40px;
@@ -258,7 +264,7 @@ section h3 {
 
 .service-icon {
   font-size: 70px;
-  background: var(--lightblue);
+  background: var(--hightlight-color);
   color: white;
   width: 120px;
   padding: 25px 0;
@@ -372,7 +378,7 @@ section h3 {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--lightblue);
+  background-color: var(--hightlight-color);
   opacity: 0;
   z-index: 1;
 }
@@ -485,7 +491,7 @@ section h3 {
   padding: 10px;
   margin-right: 20px;
   border-radius: 5px;
-  background-color: var(--darkblue);
+  background-color: var(--blue);
   color: white;
 }
 
@@ -600,7 +606,8 @@ section h3 {
 .social-media li {
   display: inline-block;
   list-style: none;
-  background: var(--darkgray);
+ /* background-color: var(--darkgray);
+  background-color: var(--green);*/
   font-size: 22px;
   width: 50px;
   height: 50px;
@@ -614,12 +621,16 @@ section h3 {
 }
 
 .social-media li:hover {
-  background: var(--lightblue);
+  /*background-color: var(--red);*/
 }
 
 .social-media a {
   text-decoration: none;
-  color: white;
+  color: white; 
+}
+
+.social-media a:hover {
+  color: var(--green);
 }
 
 #team p {
@@ -754,7 +765,7 @@ section h3 {
   margin-left: auto;  
   height: 50px;
   width: 200px;
-  background: var(--darkblue);
+  background: var(--blue);
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -773,9 +784,11 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
-  margin: 0 50px;
+  background-color: var(--darkgray);
+  color: white; 
+  width: 100%;
 }
 
 #copyright, footer ul, #policies {
@@ -794,18 +807,17 @@ footer .social-media {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  color: var(--lightblue);
+  color: white;
 }
 
 #policies a {
   font-family: 'Merriweather', serif;
-  color: var(--darkblue);
-  border-bottom: 1px solid white;
-  transition: border-bottom .15s;
+  color: white;
+  transition: color .15s;
 }
 
 #policies a:hover {
-  border-bottom: 1px solid var(--darkblue);
+  color: var(--green);
 }
 
 #policies p {
