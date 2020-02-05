@@ -99,6 +99,15 @@ window.addEventListener('scroll', () => {
 //  }
 
   console.log(portfolioSection.getBoundingClientRect().top, portfolioSection.getBoundingClientRect().bottom);
+
+  console.log('introSection.getBoundingClientRect().bottom:', introSection.getBoundingClientRect().bottom);
+  console.log('home-page button:', home);
+
+  if (introSection.getBoundingClientRect().bottom >= 50) {
+    home.style.color = 'var(--green)';
+  } else {
+    home.style.color = 'white';
+  }
   
   if (portfolioSection.getBoundingClientRect().top <= 50 && portfolioSection.getBoundingClientRect().bottom >= 50) {
     portfolioNav.style.color = 'var(--green)';

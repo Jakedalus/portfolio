@@ -7,7 +7,6 @@
   --darkgray: #212528;
   --lightblue: #00B0E6;
   --green: #87FFE4;
-  --hightlight-color: var(--green);
   --blue: #007599;
   --darkblue: #0B222D;
   --pink: #FFCDC7;
@@ -65,12 +64,13 @@ header .container {
   display: flex;
   flex-wrap: nowrap;
   font-size: 30px;
-  color: white;
+  color: var(--green);
   font-family: 'Oleo Script', cursive;
   transition: font-size .2s ease-in;
+  list-style: none;
 }
 
-#home-page:hover {
+#home-page li:hover {
   color: var(--green);
 }
 
@@ -82,6 +82,7 @@ header .container {
 h1, h2, h4 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+  color: white;
 }
 
 a {
@@ -202,7 +203,7 @@ section h2 {
 
 section h3 {
   font-style: italic;
-  color: darkgray;
+  color: white;
   padding-bottom: 50px;
 }
 
@@ -350,35 +351,40 @@ section h3 {
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 350px;
   background: white;
   margin-bottom: 40px;
   text-align: center;
   border-radius: 5px;
+  border: 10px solid var(--darkblue);
 }
 
 .img-container {
-  position: relative;
+  position: relative; 
   z-index: 1;
 
 }
 
 
 .project img, .zoom {
-  width: 350px;
+  width: 330px;
+  width: 100%;
   height: 250px;
   cursor: pointer;
   transition: opacity 0.3s ease-in;
   z-index: 1;
   object-fit: cover;
-  border-radius: 5px 5px 0 0;
+  /*border-radius: 5px 5px 0 0;*/
 }
 
 .zoom {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--hightlight-color);
+  background-color: var(--lightblue);
   opacity: 0;
   z-index: 1;
 }
@@ -401,11 +407,12 @@ section h3 {
   margin: 0;
   padding-top: 30px;
   margin-bottom: 5px;
+  color: var(--darkgray);
 }
 
 .project h5 {
   font-style: italic;
-  color: darkgray;
+  color: var(--darkgray);
   margin: 0;
   padding-bottom: 30px;
 }
@@ -421,6 +428,7 @@ section h3 {
   height: 100%;
   overflow: auto;
   z-index: 5;
+  color: white;
   
   opacity: 0;
   
@@ -442,6 +450,7 @@ section h3 {
   justify-content: space-around;
   background: white;
   background-color: var(--lightgray);
+  background-color: var(--darkblue);
   padding: 50px;
   margin: 20px;
 }
@@ -508,6 +517,11 @@ section h3 {
   margin: 10px auto;
   object-fit: cover;
   margin: 5px 0;
+}
+
+.project-detail img {
+  border: 10px solid var(--blue);
+  border-radius: 5px;
 }
 
 .close-project-detail {
