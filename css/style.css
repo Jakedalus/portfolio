@@ -164,7 +164,7 @@ nav li:hover {
 
 main {
   width: 100%;
-  background-color: var(--blue);  
+  background-color: var(--darkblue);
 }
 
 section {
@@ -185,7 +185,7 @@ section {
 }
 
 section:nth-child(2n+1) {
-  background-color: var(--darkblue);
+  /*background-color: var(--darkblue);*/
  /* background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: darken;*/
 }
@@ -359,7 +359,23 @@ section h3 {
   margin-bottom: 40px;
   text-align: center;
   border-radius: 5px;
-  border: 10px solid var(--darkblue);
+  box-shadow: 0 4px 6px 0 var(--darkgray);
+  box-shadow: 0 4px 6px 0 hsla(352, 52%, 80%, 1);
+  box-shadow: 0 4px 6px 0 hsla(166, 47%, 100%, 1);
+  box-shadow: 0 4px 6px 0 hsla(194, 100%, 90%, 1);
+  box-shadow: 0 4px 6px 0 hsla(194, 75%, 60%, .4);
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.6);
+  transition: box-shadow 0.3s ease-in;
+}
+
+.project:hover {
+  box-shadow: 0 8px 12px 0 var(--darkgray);
+  box-shadow: 0 8px 12px 0 hsla(360, 100%, 100%, .4);
+  box-shadow: 0 8px 12px 0 hsla(166, 47%, 100%, 1);
+  box-shadow: 0 8px 12px 0 hsla(352, 52%, 80%, 1);
+  box-shadow: 0 8px 12px 0 hsla(194, 100%, 90%, 1);
+  box-shadow: 0 8px 12px 0 hsla(194, 75%, 60%, .4);
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.6);
 }
 
 .img-container {
@@ -377,7 +393,7 @@ section h3 {
   transition: opacity 0.3s ease-in;
   z-index: 1;
   object-fit: cover;
-  /*border-radius: 5px 5px 0 0;*/
+  border-radius: 5px 5px 0 0;
 }
 
 .zoom {
@@ -520,7 +536,8 @@ section h3 {
 }
 
 .project-detail img {
-  border: 10px solid var(--blue);
+  /*border: 10px solid var(--blue);*/
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.5);
   border-radius: 5px;
 }
 
