@@ -663,10 +663,11 @@ footer .social-media {
     flex-direction: column;
     position: absolute;
     top: 20px;
-    left: -20px;
+    left: -90px;
 
     transform: scaleY(0);
     padding: 20px;
+    text-align: right;
   }
 
   nav li {

@@ -24,6 +24,16 @@ hamburger.addEventListener('click', () => {
     : innerNav.style.transform = 'scaleY(1)';
 });
 
+window.addEventListener('resize', () => {
+  // console.log('window resized!', window.innerWidth);
+  if (window.innerWidth > 1060) {
+    console.log('LARGE');
+    innerNav.style.transform = 'scaleY(1)';
+  } else {
+    innerNav.style.transform = 'scaleY(0)';
+  }
+});
+
 
 // Click functionality for Portfolio imgs
 const projectImages = document.querySelectorAll('.img-container'); // the thumbnails in the portfolio
