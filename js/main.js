@@ -83,12 +83,12 @@ window.addEventListener('scroll', () => {
     header.style.backgroundColor = 'var(--darkgray)';
     innerNav.style.backgroundColor = 'var(--darkgray)';
     home.style.fontSize = '25px';
-    headerContainer.style.padding = '10px 120px';
+    headerContainer.style.height = '60px';
   } else if (introSection.getBoundingClientRect().top <= 10) {
     header.style.backgroundColor = 'transparent';
     innerNav.style.backgroundColor = 'transparent';
     home.style.fontSize = '30px';
-    headerContainer.style.padding = '20px 120px';
+    headerContainer.style.height = '100px';
   }
   
   //Highlight the navbar links when section is in view

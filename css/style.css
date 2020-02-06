@@ -42,6 +42,19 @@ header {
 /*  transition: background-color .2s ease-in;*/
 }
 
+
+
+header .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between; 
+  height: 100px;
+  transition: height .2s ease-in;
+  animation: .8s ease-in-out fadeIn;
+
+}
+
 .container {
   padding: 20px var(--side-padding);
   width: 80%;
@@ -49,16 +62,6 @@ header {
   
   /*transition: padding .2s ease-in;*/
 }
-
-header .container {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  transition: padding .2s ease-in;
-  animation: .8s ease-in-out fadeIn;
-}
-
 
 #home-page {
   display: flex;
