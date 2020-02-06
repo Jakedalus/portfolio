@@ -358,7 +358,7 @@ section h3 {
   background: white;
   margin-bottom: 40px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 6px;  /* 1px larger radius than the img/zoom because it was poking out, you could see a bit of white */
   box-shadow: 0 4px 6px 0 var(--darkgray);
   box-shadow: 0 4px 6px 0 hsla(352, 52%, 80%, 1);
   box-shadow: 0 4px 6px 0 hsla(166, 47%, 100%, 1);
@@ -403,6 +403,7 @@ section h3 {
   background-color: var(--lightblue);
   opacity: 0;
   z-index: 1;
+
 }
 
 .fa-plus {
@@ -646,7 +647,7 @@ section h3 {
   margin-right: 5px;
   border-radius: 50%;
   cursor: pointer;
-  text-align: center;
+  /*text-align: center;*/
   
   transition: background .2s ease-in;
 }
