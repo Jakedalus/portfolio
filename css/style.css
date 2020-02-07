@@ -144,7 +144,8 @@ nav li:hover {
 
 #hamburger {
   position: absolute;
-  left: 0;
+  top: -12.5px;
+  left: -30px;
   display: none;
   cursor: pointer;
   height: 30px;
@@ -704,7 +705,7 @@ footer .social-media {
     flex-direction: column;
     position: absolute;
     top: 20px;
-    left: -90px;
+    left: -123px;
 
     transform: scaleY(0);
     padding: 20px;
