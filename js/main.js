@@ -6,7 +6,9 @@ const portfolioSection = document.querySelector('#projects');
 const contactSection = document.querySelector('#contact');
 
 const header = document.querySelector('header');
+const hamburgerContainer = document.querySelector('#hamburger-container');
 const hamburger = document.querySelector('#hamburger');
+const hamburgerLines = document.querySelectorAll('#hamburger div');
 const innerNav = document.querySelector('#inner-nav');
 const home = document.querySelector('#home-page');
 const headerContainer = document.querySelector('header .container');
@@ -19,9 +21,27 @@ const contactNav = document.querySelector('a[href="#contact"]');
 
 // open and close nav links on click hamburger
 hamburger.addEventListener('click', () => {
-  innerNav.style.transform === 'scaleY(1)' 
-    ? innerNav.style.transform = 'scaleY(0)' 
-    : innerNav.style.transform = 'scaleY(1)';
+  if (innerNav.style.transform === 'scaleY(1)') {  // if nav menu is open
+    innerNav.style.transform = 'scaleY(0)';
+    hamburgerLines[0].classList.remove('menu-open');
+    hamburgerLines[1].classList.remove('menu-open');
+    hamburgerLines[2].classList.remove('menu-open');
+
+
+    // hamburgerLines[0].style.transform = 'rotate(0)';
+    // hamburgerLines[1].style.opacity = '1';
+    // hamburgerLines[2].style.transform = 'rotate(0)';
+  } else {
+    innerNav.style.transform = 'scaleY(1)';
+    hamburgerLines[0].classList.add('menu-open');
+    hamburgerLines[1].classList.add('menu-open');
+    hamburgerLines[2].classList.add('menu-open');
+
+
+    // hamburgerLines[0].style.transform = 'rotate(45deg) translateY(13px)';
+    // hamburgerLines[1].style.opacity = '0';
+    // hamburgerLines[2].style.transform = 'rotate(-45deg) translateY(-13px)';
+  }
 });
 
 window.addEventListener('resize', () => {

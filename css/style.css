@@ -113,7 +113,7 @@ h4 {
 
 nav {
   position: relative;
-  padding-top: 5px;
+  /*padding-top: 5px;*/
   
 }
 
@@ -139,10 +139,54 @@ nav li:hover {
   /*padding: 10px 15px 10px 0;*/
 }
 
+/* HAMBURGER */
+
+
 #hamburger {
+  position: absolute;
+  left: 0;
   display: none;
   cursor: pointer;
+  height: 30px;
+  width: 30px;
 }
+
+
+#hamburger div {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  transform-origin: center;
+  transition: margin 0.2s ease-in, transform .2s ease-in-out, opacity .2s ease-in-out;;
+}
+
+
+#hamburger div:nth-child(1) {
+  /*top: -10px;*/
+}
+
+#hamburger div:nth-child(2) {
+  top: 10px;
+}
+
+#hamburger div:nth-child(3) {
+  top: 20px;
+}
+
+#hamburger div:nth-child(1).menu-open {
+  transform: translateX(9px) rotate(45deg) translateY(14px);
+}
+
+#hamburger div:nth-child(2).menu-open {
+  opacity: 0;
+}
+
+#hamburger div:nth-child(3).menu-open {
+  transform: translateX(9px) rotate(-45deg) translateY(-14px);
+}
+
+
 
 @keyframes fadeInMoveUp {
   0% {
@@ -634,6 +678,9 @@ footer .social-media {
   padding-right: 10px;
 }
 
+
+
+
 /*****************/
 /* MEDIA QUERIES */
 
@@ -670,6 +717,7 @@ footer .social-media {
   
   #hamburger {
     display: inline;
+    height: 30px;
   }
   
   .service {
