@@ -690,6 +690,10 @@ footer .social-media {
   .project, .project img, .zoom {
     width: 300px; 
   }
+
+  .project img, .zoom {
+    height: 215px;
+  }
  
 }
 
