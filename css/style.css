@@ -187,7 +187,7 @@ nav li:hover {
   transform: translateX(9px) rotate(-45deg) translateY(-14px);
 }
 
-
+/* ANIMATIONS */
 
 @keyframes fadeInMoveUp {
   0% {
@@ -210,6 +210,8 @@ nav li:hover {
     opacity: 1;
   }
 }
+
+/* MAIN SECTIONS */
 
 main {
   width: 100%;
@@ -296,6 +298,7 @@ section h3 {
 
 
 /* INTRO SECTION */
+
 #intro {
   height: 700px;
   padding-top: 50px;

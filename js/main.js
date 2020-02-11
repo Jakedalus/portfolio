@@ -73,11 +73,12 @@ projectImages.forEach((image) => {
     console.log(detail);
     detail.style.display = 'block';
     body.style.overflow = 'hidden'; // stop page from scrolling in the background
-    pageMask.style.display = 'block';
+    pageMask.style.display = 'block'; // dim the background when the modal is open
+    header.style.display = 'none';
     
     // update top and opacity styles .2s after change display to block
     setTimeout(() => {
-      detail.style.top = '55%';  // creates slight top down movement animation
+      detail.style.top = '50%';  // creates slight top down movement animation
       detail.style.opacity = '1';
     }, 200);
     
@@ -88,6 +89,7 @@ projectImages.forEach((image) => {
       detail.style.top = '45%';
       detail.style.opacity = '0';
       body.style.overflow = 'auto';
+      header.style.display = 'block';
       
       // remove from document flow after animations are finished
       setTimeout(() => {
