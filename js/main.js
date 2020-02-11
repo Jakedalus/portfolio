@@ -63,6 +63,8 @@ const body = document.querySelector('body');
 console.log("projectImages:", projectImages);
 console.log("projectDetails:", projectDetails);
 
+
+
 projectImages.forEach((image) => {
   image.addEventListener('click', () => {
     console.log(`Clicked ${image}`);
@@ -84,8 +86,9 @@ projectImages.forEach((image) => {
     
     const close = document.querySelector(`[data-project='${projectId}'] .close-project-detail`);
     console.log(close);
-    close.addEventListener('click', () => {
-      console.log('Clicked close!', close);
+
+    function closeModal () {
+      console.log('click close!');
       detail.style.top = '45%';
       detail.style.opacity = '0';
       body.style.overflow = 'auto';
@@ -96,8 +99,11 @@ projectImages.forEach((image) => {
         detail.style.display = 'none';
         pageMask.style.display = 'none';
       }, 200);
-    
-    });
+    }
+
+    close.addEventListener('click', closeModal);
+    pageMask.addEventListener('click', closeModal);
+
   });
 });
 
