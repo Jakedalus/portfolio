@@ -465,9 +465,7 @@ section h3 {
 }
 
 .project-detail h4 {
-  text-transform: uppercase;
-  font-size: 50px;
-  margin: 0;
+  
 }
 
 .project-detail h5 {
@@ -479,15 +477,25 @@ section h3 {
   justify-content: space-around;
   background-color: var(--darkblue);
   padding: 50px;
-  margin: 20px;
+  /*margin: 20px;*/
   border-radius: 5px;
 }
 
+.project-detail__title-container {
+  position: relative;
+  height: 90px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
 .project-detail__title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 100px;
+  position: absolute;
+  bottom: 0;
+  text-transform: uppercase;
+  font-size: 50px;
+  margin: 0;
+  
+  text-align: left;
 }
 
 .project-detail__image-panel {
