@@ -17,6 +17,7 @@ const portfolioNav = document.querySelector('a[href="#projects"]');
 const aboutNav = document.querySelector('a[href="#about"]');
 //const teamNav = document.querySelector('a[href="#team"]');
 const contactNav = document.querySelector('a[href="#contact"]');
+const pageMask = document.querySelector('#page-mask');
 
 
 // open and close nav links on click hamburger
@@ -72,6 +73,7 @@ projectImages.forEach((image) => {
     console.log(detail);
     detail.style.display = 'block';
     body.style.overflow = 'hidden'; // stop page from scrolling in the background
+    pageMask.style.display = 'block';
     
     // update top and opacity styles .2s after change display to block
     setTimeout(() => {
@@ -90,6 +92,7 @@ projectImages.forEach((image) => {
       // remove from document flow after animations are finished
       setTimeout(() => {
         detail.style.display = 'none';
+        pageMask.style.display = 'none';
       }, 200);
     
     });
