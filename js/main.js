@@ -57,7 +57,7 @@ window.addEventListener('resize', () => {
 
 
 // Click functionality for Portfolio imgs
-const projectImages = document.querySelectorAll('.img-container'); // the thumbnails in the portfolio
+const projectImages = document.querySelectorAll('.project__img-container'); // the thumbnails in the portfolio
 const projectDetails = Array.from(document.querySelectorAll('.project-detail')); // the detailed project modals
 const body = document.querySelector('body');
 console.log("projectImages:", projectImages);
