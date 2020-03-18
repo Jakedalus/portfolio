@@ -130,6 +130,7 @@ window.addEventListener('scroll', () => {
     innerNav.style.backgroundColor = 'transparent';
     home.style.fontSize = '30px';
     headerContainer.style.height = '100px';
+
   }
   
   //Highlight the navbar links when section is in view

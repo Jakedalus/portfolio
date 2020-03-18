@@ -38,7 +38,7 @@ header {
   top: 0;
   background-color: transparent;  
   z-index: 10;
-  
+/*  transition: height .2s ease-in;*/
 /*  transition: background-color .2s ease-in;*/
 }
 
@@ -66,18 +66,31 @@ header .container {
 #home-page {
   display: flex;
   flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
   font-size: 30px;
   color: var(--green);
-  font-family: 'Oleo Script', cursive;
+/*  font-family: 'Oleo Script', cursive;*/
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
   transition: font-size .2s ease-in;
   list-style: none;
+	border: 1px solid white;
+	border-radius: 5px;
+/*	padding: 10px 20px;*/
+	height: 50px;
+	width: 50px;
 }
 
-#home-page li:hover {
-  color: var(--green);
+
+#home-page:hover {
+	border: 1px solid var(--green);
 }
+
+#home-page:hover li {
+	color: var(--green);
+}
+
 
 #header-img {
   height: 40px;
