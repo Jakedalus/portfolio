@@ -69,6 +69,8 @@ header .container {
   font-size: 30px;
   color: var(--green);
   font-family: 'Oleo Script', cursive;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
   transition: font-size .2s ease-in;
   list-style: none;
 }
