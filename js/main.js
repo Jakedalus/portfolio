@@ -123,12 +123,12 @@ window.addEventListener('scroll', () => {
   if (introSection.getBoundingClientRect().bottom - window.innerHeight <= 0) {
     header.style.backgroundColor = 'var(--darkgray)';
     innerNav.style.backgroundColor = 'var(--darkgray)';
-    home.style.fontSize = '25px';
+//    home.style.fontSize = '25px';
     headerContainer.style.height = '60px';
   } else if (introSection.getBoundingClientRect().top <= 10) {
     header.style.backgroundColor = 'transparent';
     innerNav.style.backgroundColor = 'transparent';
-    home.style.fontSize = '30px';
+//    home.style.fontSize = '30px';
     headerContainer.style.height = '100px';
 
   }

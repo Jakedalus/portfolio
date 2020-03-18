@@ -50,7 +50,7 @@ header .container {
   flex-wrap: nowrap;
   justify-content: space-between; 
 /*  height: 100px;*/
-  transition: height .2s ease-in;
+  transition: height .2s ease;
   animation: .8s ease-in-out fadeIn;
 }
 
@@ -59,7 +59,7 @@ header .container {
   width: 80%;
   margin: 0 auto;
   
-  /*transition: padding .2s ease-in;*/
+/*  transition: padding .2s ease-in;*/
 }
 
 #home-page {
@@ -74,8 +74,8 @@ header .container {
 	font-weight: bold;
   transition: font-size .2s ease-in;
   list-style: none;
-/*	border: 1px solid white;*/
-/*	border-radius: 5px;*/
+	border: 1px solid white;
+	border-radius: 5px;
 /*	padding: 10px 20px;*/
 /*
 	height: 50px;
@@ -83,12 +83,10 @@ header .container {
 */
 }
 
-/*
 
 #home-page:hover {
 	border: 1px solid var(--green);
 }
-*/
 
 #home-page:hover li {
 	color: var(--green);
