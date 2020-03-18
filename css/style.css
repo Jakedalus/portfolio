@@ -49,10 +49,9 @@ header .container {
   align-items: center;
   flex-wrap: nowrap;
   justify-content: space-between; 
-  height: 100px;
+/*  height: 100px;*/
   transition: height .2s ease-in;
   animation: .8s ease-in-out fadeIn;
-
 }
 
 .container {
@@ -75,17 +74,21 @@ header .container {
 	font-weight: bold;
   transition: font-size .2s ease-in;
   list-style: none;
-	border: 1px solid white;
-	border-radius: 5px;
+/*	border: 1px solid white;*/
+/*	border-radius: 5px;*/
 /*	padding: 10px 20px;*/
+/*
 	height: 50px;
 	width: 50px;
+*/
 }
 
+/*
 
 #home-page:hover {
 	border: 1px solid var(--green);
 }
+*/
 
 #home-page:hover li {
 	color: var(--green);
