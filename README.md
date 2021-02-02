@@ -2,6 +2,8 @@
 
 This is my personal portfolio site. It's coded in vanilla HTML, CSS, and JS. 
 
+https://www.jacob-carpenter.com/
+
 You're free to use the site as a starting point of your own, so fork away if you'd like!
 
 <img alt="portfolio hero" src="https://github.com/Jakedalus/portfolio/blob/master/readme_images/hero.png" width="400">
